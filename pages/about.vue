@@ -3,7 +3,7 @@
 </script>
 <template >
   <div class="about">
-    <h1>關於我</h1>
+    <h1>前台 about</h1>
   </div>
 </template>
 <style lang="">
