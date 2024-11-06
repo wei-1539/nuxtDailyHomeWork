@@ -1,7 +1,5 @@
 <script setup>
-definePageMeta({
-    layout:'another'
-})
+
 </script>
 <template >
   <div class="about">

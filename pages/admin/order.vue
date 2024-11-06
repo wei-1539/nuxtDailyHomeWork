@@ -5,7 +5,9 @@ definePageMeta({
 </script>
 
 <template>
-  <div>Page: admin/index</div>
+  <div>
+    Page: admin/order
+  </div>
 </template>
 
 <style scoped></style>
