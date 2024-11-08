@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+import Header from "@/components/Header.vue";
+</script>
 <template>
   <div>
+    <!--  -->
+    <Header />
     <h1 class="text-primary">Page: 首頁</h1>
     <p>目前路由的路徑 - route.fullPath 為 : /</p>
     <button type="button" class="btn btn-primary">Primary</button>
