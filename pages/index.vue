@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { useCounter } from "~/composables/useCounter";
+
 // 可以選擇使用 import 或 auto import 的方式進行導入
 // import Header from "@/components/Header.vue";
+const { count, increment, decrement } = useCounter();
+const title = ref("計時器");
 </script>
 <template>
   <div>
@@ -16,6 +20,14 @@
       price="NT$10000"
       buttonText="馬上預約"
     />
+
+    <h2>{{ title }}</h2>
+    <div class="counter">
+      <button type="button" @click="decrement">減少</button>
+      <p>{{ count }}</p>
+      <button type="button" @click="increment">增加</button>
+    </div>
+
     <p>目前路由的路徑 - route.fullPath 為 : /</p>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
@@ -30,4 +42,9 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.counter {
+  display: flex;
+  gap: 10px;
+}
+</style>
