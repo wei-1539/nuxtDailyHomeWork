@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const route = useRoute();
+console.log(route);
+console.log(route.fullPath);
+</script>
 <template>
   <div>
     <header>
@@ -7,7 +11,7 @@
           <NuxtLink></NuxtLink>
         </li> -->
         <li>
-          <NuxtLink to="/example">範例練習</NuxtLink>
+          <NuxtLink :to="`${route.fullPath}/example`">範例練習</NuxtLink>
         </li>
       </ul>
     </header>
